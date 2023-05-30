@@ -1,0 +1,12 @@
+[package]
+name = "show-gpus"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["opencl"]
+opencl = ["rust-gpu-tools/opencl"]
+cuda = ["rust-gpu-tools/cuda"]
+
+[dependencies]
+rust-gpu-tools = { version = "0.7.2", default-features = false }
